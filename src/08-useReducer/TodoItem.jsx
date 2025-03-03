@@ -11,6 +11,7 @@ const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
             todo.done ? "text-decoration-line-through" : ""
           }`}
           onClick={() => onToggleTodo(todo.id)}
+          aria-label="span"
         >
           {todo.description}
         </span>
